@@ -1,0 +1,18 @@
+#cabecera {
+    text-align: right;
+    padding-right: 40px; /* Evita que se pegue al borde */
+    background-color: #f4f4f4;
+}
+
+/* Ejemplo de disposición básica */
+body {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* 2 partes para section, 1 para aside */
+    gap: 20px;
+}
+
+header, footer {
+    grid-column: span 2; /* Ocupan todo el ancho */
+}
